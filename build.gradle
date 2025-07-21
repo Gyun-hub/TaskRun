@@ -23,6 +23,9 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	implementation 'org.springframework.boot:spring-boot-starter-web' // Web API 용
 	implementation 'org.springframework.boot:spring-boot-starter-aop' // @Async 내부 AOP 처리
+
+	compileOnly("org.projectlombok:lombok:1.18.38")
+	annotationProcessor("org.projectlombok:lombok:1.18.38")
 }
 
 tasks.named('test') {
